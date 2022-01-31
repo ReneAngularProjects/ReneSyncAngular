@@ -1,0 +1,226 @@
+<div class="control-section">
+    <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]="4" [cellSpacing]='cellSpacing'
+        [cellAspectRatio]='cellAspectRatio'>
+        <div id="one" class="e-panel card text-white bg-primary" data-row="0" data-col="0" data-sizeX="1"
+            data-sizeY="1" >
+            <div class="card-body">
+                <span class="e-icons primary"></span>
+                <h5 class="card-title">Primary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div id="two" class="e-panel card text-white bg-success" data-row="0" data-col="1" data-sizeX="1"
+            data-sizeY="1">
+            <div class="card-body">
+                <span class="e-icons success"></span>
+                <h5 class="card-title">Success card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div id="three" class="e-panel card text-white bg-info" data-row="0" data-col="2" data-sizeX="1" data-sizeY="1">
+            <div class="card-body">
+                <span class="e-icons info"></span>
+                <h5 class="card-title">Info card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div id="four" class="e-panel card text-white bg-warning" data-row="0" data-col="3" data-sizeX="1"
+            data-sizeY="1">
+            <div class="card-body">
+                <span class="e-icons warning"></span>
+                <h5 class="card-title">Warning card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div id="five" class="e-panel" data-row="1" data-col="0" data-sizeX="1" data-sizeY="2">
+            <form style="margin: 20px;">
+                <div class="sliderwrap">
+                    <div class="control-label">Numeric TextBox</div>
+                    <ejs-numerictextbox value="10"></ejs-numerictextbox>
+                </div>
+                <div class="sliderwrap">
+                    <div class="control-label">Percentage TextBox</div>
+                    <ejs-numerictextbox format="p2" value="0.5" min="0" max="1" step="0.01">
+                    </ejs-numerictextbox>
+                </div>
+                <div class="sliderwrap">
+                    <div class="control-label">Currency TextBox</div>
+                    <ejs-numerictextbox format="c2" value="100"></ejs-numerictextbox>
+                </div>
+            </form>
+        </div>
+
+        <div id="six" class="e-panel" data-row="1" data-col="1" data-sizeX="1" data-sizeY="2">
+            <form style="margin: 20px;">
+                <div class="sliderwrap">
+                    <div class="control-label">Numeric TextBox</div>
+                    <ejs-numerictextbox value="10"></ejs-numerictextbox>
+                </div>
+                <div class="sliderwrap">
+                    <div class="control-label">Percentage TextBox</div>
+                    <ejs-numerictextbox format="p2" value="0.5" min="0" max="1" step="0.01">
+                    </ejs-numerictextbox>
+                </div>
+                <div class="sliderwrap">
+                    <div class="control-label">Currency TextBox</div>
+                    <ejs-numerictextbox format="c2" value="100"></ejs-numerictextbox>
+                </div>
+            </form>
+        </div>
+
+        <div id="seven" class="e-panel" data-row="1" data-col="2" data-sizeX="1" data-sizeY="2">
+            <form style="margin: 20px;">
+                <div id="sliderwrap">
+                    <br>
+                    <label style="padding-bottom: 10px">Simple Dropdown</label>
+                    <ejs-combobox id='comboelement' [dataSource]='data' placeholder='Select a game'></ejs-combobox>
+                </div>
+                <div id="sliderwrap">
+                    <br>
+                    <label style="padding-bottom: 10px">Dropdown with Icon</label>
+                    <ejs-combobox id='icons' [dataSource]='socialMediaData' [placeholder]='iconWaterMark'
+                        [fields]='iconFields' [popupHeight]='height'></ejs-combobox>
+                </div>
+                <div id="sliderwrap">
+                    <br>
+                    <label style="padding-bottom: 10px">Dropdown Tree</label>
+                    <ejs-dropdowntree #sample id='default' [changeOnBlur]='false' [fields]='fields1' popupHeight='220px'
+                        placeholder='Select a folder or file'></ejs-dropdowntree>
+                </div>
+            </form>
+        </div>
+
+        <div id="eight" class="e-panel" data-row="1" data-col="3" data-sizeX="1" data-sizeY="2">
+            <form style="margin: 20px;">
+                <div id="sliderwrap">
+                    <br>
+                    <label style="padding-bottom: 10px">Date Picker</label>
+                    <ejs-datepicker [value]='dateValue' placeholder='Enter date'></ejs-datepicker>
+                </div>
+                <div id="sliderwrap">
+                    <br>
+                    <label style="padding-bottom: 10px">Date Range Picker</label>
+                    <ejs-daterangepicker></ejs-daterangepicker>
+                </div>
+                <div id="sliderwrap">
+                    <br>
+                    <label style="padding-bottom: 10px">Date Time Picker</label>
+                    <ejs-datetimepicker></ejs-datetimepicker>
+                </div>
+            </form>
+        </div>
+
+        <div id="nine" class="e-panel" data-row="3" data-col="0" data-sizeX="2" data-sizeY="2">
+            <div class="text-white bg-secondary">
+                <label style="padding-left: 10px; padding-top: 10px; color: white; font-size: large;">Tab
+                    Control</label>
+            </div>
+            <div style="margin: 20px;">
+                <ejs-tab id="element" heightAdjustMode='Auto'>
+                    <div class="e-tab-header">
+                        <div>Twitter </div>
+                        <div>Facebook </div>
+                        <div>WhatsApp </div>
+                    </div>
+                    <div class="e-content">
+                        <div>
+                            Twitter is an online social networking service that enables users to send and read short
+                            140-character messages called 'tweets'. Registered users can read and post tweets, but those
+                            who are unregistered can only read them. Users access Twitter through the website interface,
+                            SMS or mobile device app Twitter Inc. is based in San Francisco and has more than 25 offices
+                            around the world. Twitter was created in March 2006 by Jack Dorsey, Evan Williams, Biz
+                            Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide
+                            popularity, with more than 100 million users posting 340 million tweets a day in 2012.The
+                            service also handled 1.6 billion search queries per day.
+                        </div>
+                        <div>
+                            Facebook is an online social networking service headquartered in Menlo Park, California. Its
+                            website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College
+                            roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris
+                            Hughes.The founders had initially limited the website's membership to Harvard students, but
+                            later expanded it to colleges in the Boston area, the Ivy League, and Stanford University.
+                            It gradually added support for students at various other universities and later to
+                            high-school students.
+                        </div>
+                        <div>
+                            WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones
+                            that operates under a subscription business model. It uses the Internet to send text
+                            messages, images, video, user location and audio media messages to other users using
+                            standard cellular mobile numbers. As of February 2016, WhatsApp had a user base of up to one
+                            billion,[10] making it the most globally popular messaging application. WhatsApp Inc., based
+                            in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for
+                            approximately US6. 9.3 billion.
+                        </div>
+                    </div>
+                </ejs-tab>
+            </div>
+        </div>
+
+        <div id="ten" class="e-panel" data-row="3" data-col="3" data-sizeX="2" data-sizeY="2">
+            <div class="text-white bg-secondary">
+                <label style="padding-left: 10px; padding-top: 10px; color: white; font-size: large;">Accordion
+                    Control</label>
+            </div>
+            <div style="margin: 10px;">
+                <ejs-accordion expandMode='Single'>
+                    <e-accordionitems>
+                        <e-accordionitem expanded='true'>
+                            <ng-template #header>
+                                <div>ASP.NET</div>
+                            </ng-template>
+                            <ng-template #content>
+                                <div>Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for
+                                    building Web applications and XML Web
+                                    services. ASP.NET pages execute on the server and generate markup such as HTML, WML,
+                                    or XML that is sent to a desktop
+                                    or mobile browser. ASP.NET pages use a compiled,event-driven programming model that
+                                    improves performance and enables
+                                    the separation of application logic and user interface.</div>
+                            </ng-template>
+                        </e-accordionitem>
+                        <e-accordionitem>
+                            <ng-template #header>
+                                <div>ASP.NET MVC</div>
+                            </ng-template>
+                            <ng-template #content>
+                                <div>The Model-View-Controller (MVC) architectural pattern separates an application into
+                                    three main components: the model,
+                                    the view, and the controller. The ASP.NET MVC framework provides an alternative to
+                                    the ASP.NET Web Forms pattern for
+                                    creating Web applications. The ASP.NET MVC framework is a lightweight, highly
+                                    testable presentation framework that
+                                    (as with Web Forms-based applications) is integrated with existing ASP.NET features,
+                                    such as master pages and membership-based
+                                    authentication.
+                                </div>
+                            </ng-template>
+                        </e-accordionitem>
+                        <e-accordionitem>
+                            <ng-template #header>
+                                <div>JavaScript</div>
+                            </ng-template>
+                            <ng-template #content>
+                                <div>JavaScript (JS) is an interpreted computer programming language.It was originally
+                                    implemented as part of web browsers
+                                    so that client-side scripts could interact with the user, control the browser,
+                                    communicate asynchronously, and alter
+                                    the document content that was displayed.More recently, however, it has become common
+                                    in both game development and
+                                    the creation of desktop applications.</div>
+                            </ng-template>
+                        </e-accordionitem>
+                    </e-accordionitems>
+                </ejs-accordion>
+            </div>
+        </div>
+
+    </ejs-dashboardlayout>
+</div>

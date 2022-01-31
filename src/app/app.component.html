@@ -1,0 +1,49 @@
+
+<ejs-sidebar #dockBar id="dockSidebar" [enableDock]='enableDock' [width]='width' [dockSize]='dockSize'>
+  <div class="dock">
+      <ul>
+          <li class="sidebar-item" id="toggle" (click)="toggleClick()">
+              <span class="e-icons expand"></span>
+              <span class="e-text" title="menu">Menu</span>
+          </li>
+          <li class="sidebar-item">
+              <span class="e-icons home"></span>
+              <span routerLink="" class="e-text">Home</span>              
+          </li>
+          <li class="sidebar-item">
+              <span class="e-icons dashboard"></span>
+              <span routerLink="dashboard" class="e-text" >Dashboard</span> 
+          </li>
+          <li class="sidebar-item">
+              <span class="e-icons pdfviewer"></span>
+              <span routerLink="pdfviewer"  class="e-text" title="info">PDF Viewer</span>
+          </li>
+          <li class="sidebar-item">
+              <span class="e-icons datagrid"></span>
+              <span routerLink="datagrid"  class="e-text" title="settings">Data Grid</span>
+          </li>
+          <li class="sidebar-item">
+            <span class="e-icons scheduler"></span>
+            <span routerLink="scheduler" class="e-text">Scheduler</span>              
+        </li>
+        <li class="sidebar-item">
+            <span class="e-icons ganttchart"></span>
+            <span routerLink="ganttchart" class="e-text" >Gantt Chart</span> 
+        </li>
+        <li class="sidebar-item">
+            <span class="e-icons kanban"></span>
+            <span routerLink="kanban"  class="e-text" title="info">Kanban</span>
+        </li>
+        <li class="sidebar-item">
+            <span class="e-icons texteditor"></span>
+            <span routerLink="texteditor"  class="e-text" title="settings">Text Editor</span>
+        </li>
+      </ul>
+  </div>
+</ejs-sidebar>
+<div id="main-content container-fluid col-md-12">
+  <router-outlet style="margin: 10px;"></router-outlet>
+</div>
+<div>
+</div>
+<!--end of main content declaration -->

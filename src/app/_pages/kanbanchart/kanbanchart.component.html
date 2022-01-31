@@ -1,0 +1,14 @@
+<div class="control-section">
+  <div id="action-description">
+    <h1>Kanban Board</h1>
+  </div>
+
+  <ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings' [swimlaneSettings]='swimlaneSettings'>
+    <e-columns>
+      <e-column headerText='To do' keyField='Open'></e-column>
+      <e-column headerText='In Progress' keyField='InProgress'></e-column>
+      <e-column headerText='Testing' keyField='Testing'></e-column>
+      <e-column headerText='Done' keyField='Close'></e-column>
+    </e-columns>
+  </ejs-kanban>
+</div>

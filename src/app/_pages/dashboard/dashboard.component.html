@@ -1,0 +1,45 @@
+<div class="control-section">
+    <div class="container-fluid" id='defaultLayout'>
+        <div class="row">
+            <div class="col-sm-12" style="padding: 5px;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header text-white bg-secondary">Stock Chart</div>
+                    <div class="card-body">
+                        <ejs-stockchart id="chart-container" [title]='title'>
+                            <e-stockchart-series-collection>
+                                <e-stockchart-series [dataSource]='stockchartData' type='Candle' xName='date'
+                                    High='high' Low='low' Open='open' Close='close' Name='Apple'>
+                                </e-stockchart-series>
+                            </e-stockchart-series-collection>
+                        </ejs-stockchart>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" style="padding: 5px;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header text-white bg-secondary">Combination of different types of chart </div>
+                    <div class="card-body">
+                        <ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
+                            <e-series-collection>
+                                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y'
+                                    name='Private Consumption'>
+                                </e-series>
+                                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y1'
+                                    name='Government Consumption'></e-series>
+                                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y2'
+                                    name='Investment'>
+                                </e-series>
+                                <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y3'
+                                    name='Net Foreign Trade'>
+                                </e-series>
+                                <e-series [dataSource]='chartData' type='Line' xName='x' yName='y4' name='GDP'
+                                    [marker]='marker' opacity=0.6></e-series>
+                            </e-series-collection>
+                        </ejs-chart>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
