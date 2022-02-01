@@ -1,4 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/8491d6e2-0791-413a-981f-75da7d664d0c/resourceGroups/ReneAngular/providers/Microsoft.Web/sites/ReneAngular",
     "appService.deploySubpath": "."
 }
